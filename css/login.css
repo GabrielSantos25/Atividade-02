@@ -1,0 +1,115 @@
+:root {
+    --default-green: #1db954;
+    --light-green: #1ed760;
+    --blackground: rgb(32, 32, 32);
+    --amarelo: rgb(251, 197, 0);
+    --light-amarelo: rgb(249, 215, 91);
+    --escuro-green: rgb(2, 56, 23);
+}* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    font-family: CircularSpTitle, CircularSpTitle-Tall, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, sans-serif;
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+}
+
+.logo:hover {
+    cursor: pointer;
+    transform: scale(1.1); 
+}
+
+#navbar {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 5px 50px;
+    position: fixed;
+    width: 100%;
+}
+
+section {
+    background: url('img/background.jpg') center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section div.main {
+    margin: 150px 0;
+    padding: 5px;
+    width: 510px;
+    height: auto;
+    background: var(--escuro-green);
+    border-radius: 15px;
+}
+
+section div.main h1 {
+    text-align: center;
+    margin: 30px 0;
+    color: white;
+    font-size: 48px;
+}
+
+section div.main .cadastro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+section div.main .cadastro label {
+    color: white;
+    font-size: 14px;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+
+
+#form-cadastro input[type="text"],
+#form-cadastro input[type="text"] {
+    display: block;
+    padding: 14px;
+    width: 324px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-weight: 500;
+    background: rgb(18,18,18);
+    outline: none;
+    border: none;
+    appearance: none;
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 1px #878787;
+    color: white;
+}
+
+#form-cadastro input[type="text"]:hover,
+#form-cadastro input[type="number"]:hover {
+    transform:scale(1.05); 
+    transition: all 125ms ease;
+    background-color: var(--blackground);
+}
+
+#form-cadastro input[type="submit"] {
+    background: var(--amarelo);
+    border-radius: 30px;
+    font-weight: bold;
+    padding: 8px 32px;
+    height: 48px;
+    width: 324px;
+    font-size: 16px;
+    margin: 20px 0px;
+    border: none;
+}
+
+#form-cadastro input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: var(--light-amarelo);
+    
+}

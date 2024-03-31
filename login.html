@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flora Sol</title>
+    <link rel="stylesheet" href="css/login.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    
+    <header>
+        <navbar id="navbar">
+            <div class="navbar-container">
+             <img src="css/img/logo.png" alt="" class="logo">
+            </div>
+         </navbar>
+
+    </header>
+    
+        <section>
+            <div class="main">
+                <h1>Cadastro de Plantas</h1>
+                <div class="cadastro">
+
+                    <form id="form-cadastro" onsubmit="return false">
+                        <div class="Linha">
+                            <label>Nome da Planta</label>
+                            <input type="text" name="nome" placeholder="Nome da Planta" maxlength="40" autocomplete="off">
+                        </div>
+
+                        <div class="Linha">
+                            <label>Espécie</label>
+                            <input type="text" name="especie" placeholder="Espécie" maxlength="88" autocomplete="off">
+                        </div>
+
+                        <div class="Linha">
+                            <label>Altura Máxima (M)</label>
+                            <input type="text" name="altura" placeholder="Altura Máxima" maxlength="15" autocomplete="off" oninput="validarNumero(this)">
+                        </div>
+
+
+                            <input type="submit" name="enviar" value="Cadastrar" onclick="salvar()" />
+
+                    </form>
+                </div>
+            </div>
+        </section>
+</body>
+</html>

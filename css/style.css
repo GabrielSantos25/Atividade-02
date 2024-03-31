@@ -1,0 +1,120 @@
+:root {
+    --default-green: #1db954;
+    --light-green: #1ed760;
+    --amarelo: rgb(251, 197, 0);
+    --light-amarelo: rgb(249, 215, 91);
+    --escuro-green: rgb(2, 56, 23);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.btn-primary {
+    background: var(--amarelo);
+    text-transform: uppercase;
+    padding: 15px 50px;
+    border: none;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    text-decoration: none;
+    
+}
+
+.btn-primary:hover {
+    background-color: var(--light-amarelo);
+    cursor: pointer;
+    transition: 150ms ease;
+}
+
+.inscrever-btn {
+    color: var(--escuro-green);
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+}
+
+.logo:hover {
+    cursor: pointer;
+    transform: scale(1.1); 
+}
+
+#navbar {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    color: white;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#navbar .navbar-container {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+#navbar .navbar-container ul {
+    display: flex;
+    list-style: none;
+    font-weight: bold;
+}
+
+#navbar .navbar-container ul li {
+    padding: 0 20px;
+    transition: all 150ms ease;
+}
+
+#navbar .navbar-container ul li:hover{
+    color: #1db954;
+    cursor: pointer;
+}
+
+#navbar .navbar-container ul li:nth-child(3) {
+    border-right: 1px solid white;
+}
+
+#showcase {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('img/background.jpg') center center/cover;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: color;
+}
+
+#showcase .showcase-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+#showcase .showcase-container h2 {
+    font-size: 5rem;
+}
+
+#showcase .showcase-container p {
+    margin: 15px 0;
+    font-size: 1.1rem;
+}
