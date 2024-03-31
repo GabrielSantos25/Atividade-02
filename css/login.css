@@ -111,5 +111,4 @@ section div.main .cadastro label {
 #form-cadastro input[type="submit"]:hover {
     cursor: pointer;
     background-color: var(--light-amarelo);
-    
 }
